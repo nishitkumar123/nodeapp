@@ -1,6 +1,6 @@
 const app = require('express')();
 // Imports the Google Cloud client library for Winston
-const {LoggingWinston} = require('@google-cloud/logging-winston');
+/*const {LoggingWinston} = require('@google-cloud/logging-winston');
 
 // Creates a client
 const loggingWinston = new LoggingWinston({
@@ -17,13 +17,13 @@ const logger = winston.createLogger({
     ],
   });
   
-  // Writes some log entries
+  // Writes some log entries */
 
 app.get('/', (req, res ) => 
     res.json({ message: 'Docker is easy 🐳' }) 
     
 );
-logger.info('shields at 99%');
+//logger.info('shields at 99%');
 const port = process.env.PORT || 8080;
 
 app.listen(port, () => console.log(`app listening on http://localhost:${port}`) );
