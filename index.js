@@ -1,5 +1,4 @@
 const app = require('express')();
-const winston = require('winston');
 
 // Imports the Google Cloud client library for Winston
 const {LoggingWinston} = require('@google-cloud/logging-winston');
