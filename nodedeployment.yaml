@@ -5,8 +5,8 @@ metadata:
   labels:
     app: node-app
 spec:
-  replicas: 1
-  selector:s
+  replicas: 2
+  selector:
     matchLabels:
       app: node-app
   template:
