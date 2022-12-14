@@ -7,5 +7,6 @@ spec:
     app: node-app 
   type: LoadBalancer
   ports:
+  - protocol:TCP
     port: 8080
     targetport: 8080
