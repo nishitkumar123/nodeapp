@@ -3,11 +3,10 @@ kind: Service
 metadata:
   name: node-app-service
 spec:
-  selector:
-    app: node-app 
   type: LoadBalancer
   ports:
-  - protocol: TCP
-    port: 5000
+  - port: 80
     targetPort: 8080
-    nodePort: 31110
+    protocol: TCP
+  selector:
+    app: node-app
